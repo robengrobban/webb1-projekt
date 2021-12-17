@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>TuffeTuffeTåg - Konto</title>
+		<meta charset="utf-8">
+		<meta name="application-name" content="TuffeTuffeTåg">
+		<meta name="author" content="Robert Englund">
+		<meta name="description" content="TuffeTuffeTåg hemsida, ditt konto">
+		<meta name="generator" content="Egen gjord">
+		<meta name="keyword" content="konto">
+		<meta name="robots" content="all">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="nav.css">
+		<link rel="stylesheet" type="text/css" href="konto.css">
+		<link rel="stylesheet" type="text/css" href="footer.css">
+
+		<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script defer src="nav.js"></script>
+		<script defer src="konto.js"></script>
+		<script defer src="subscribe.js"></script>
+		<script defer src="validate.js"></script>
+
+	</head>
+	<body>
+
+		<nav>
+			<div class="max-content center-content" id="nav-flex-container">
+				<div id="nav-header">
+					<div id="nav-logo">
+						<a href="home.html">TuffeTuffeTåg</a>
+					</div>
+					<div id="hamburger-menu">
+						<img src="hamburger-menu.svg" alt="hamburger menu">
+					</div>
+				</div>
+				<ul id="nav-content">
+					<li><a class='nav-item itemhide' href='resor.html'>Resor</a></li>
+					<li><a class='nav-item itemhide' href='konto.html'>Konto</a></li>
+					<li><a class='nav-item itemhide' href='kontakt.html'>Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="overview-container" class="cut-background-top">
+
+			<article class="center-content max-content">
+
+				<header>
+					<h1>Mitt konto</h1>
+				</header>
+
+				<span class="mark"></span>
+				
+				<div class="content-container">
+
+					<div class="picture-container">
+						
+						<img src="portrait-placeholder.jpg" alt="Profilbild">
+
+					</div>
+
+					<div class="information-container">
+						
+						<div class="information-row">
+							<p>Robert</p>
+						</div>
+
+						<div class="information-row">
+							<p>Englund</p>
+						</div>
+
+						<div class="information-row">
+							<p>roen8744@student.su.se</p>
+						</div>
+
+					</div>
+				
+				</div>
+
+
+			</article>
+
+		</div>
+
+		<div id="upcoming-travels" class="cut-background-bottom">
+			
+			<article class="center-content max-content">
+				
+				<header>
+					<h1>Kommande resor</h1>
+				</header>
+
+				<span class="mark"></span>
+
+				<div id="travels-container">
+					<table id="travels-table">
+						
+						<thead>
+							<tr>
+								<th>Från</th>
+								<th>Till</th>
+								<th>Datum</th>
+								<th>Avgång</th>
+								<th>Spår</th>
+								<th>Biljett</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Stockholm</td>
+								<td>Göteborg</td>
+								<td>2023-07-04</td>
+								<td>10:20</td>
+								<td>5</td>
+								<td class="show-ticket">Visa</td>
+							</tr>
+							<tr>
+								<td>Göteborg</td>
+								<td>Malmö</td>
+								<td>2023-08-01</td>
+								<td>15:10</td>
+								<td>9</td>
+								<td class="show-ticket">Visa</td>
+							</tr>
+							<tr>
+								<td>Malmö</td>
+								<td>Stockholm</td>
+								<td>2023-08-27</td>
+								<td>20:30</td>
+								<td>2</td>
+								<td class="show-ticket">Visa</td>
+							</tr>
+						</tbody>
+
+					</table>
+				</div>
+
+			</article>
+
+		</div>
+
+
+		<div id="settings-area" class="cut-background-top">
+			
+			<article id="settings-container" class="center-content max-content">
+
+				<header>
+					<h1>Inställningar</h1>
+				</header>
+
+				<span class="mark"></span>
+				
+				<div class="form-container">
+					<form method="POST" id="account-settings" class="settings-form">
+						
+						<div class="form-row">
+							<h2>Konto</h2>
+						</div>
+
+						<div class="form-row">
+							<label for="input-firstname" class="input-label">Förnamn</label>
+							<input id="input-firstname" class="input-field" type="text" name="firstname" value="Robert">
+							<p id="firstname-error-spot" class="error-spot"></p>
+						</div>
+
+						<div class="form-row">
+							<label for="input-lastname" class="input-label">Efternamn</label>
+							<input id="input-lastname" class="input-field" type="text" name="lastname" value="Englund">
+							<p id="lastname-error-spot" class="error-spot"></p>
+						</div>
+
+						<div class="form-row">
+							<label for="input-email" class="input-label">Email</label>
+							<input id="input-email" class="input-field" type="email" name="email" value="roen8744@student.su.se">
+							<p id="email-error-spot" class="error-spot"></p>
+						</div>
+
+						<div class="form-row">
+							<p id="account-settings-confirmation">Vi har uppdaterat dina inställningar</p>
+						</div>
+
+						<div class="form-row">
+							<button type="submit" class="input-button">
+								Spara
+							</button>
+						</div>
+
+					</form>
+
+					<form method="POST" id="other-settings" class="settings-form">
+						
+						<div class="form-row">
+							<h2>Övrigt</h2>
+						</div>
+
+						<div class="form-row">
+							<label for="input-notrec" class="checkmark-container">
+								<input id="input-notrec" type="checkbox"  name="confirmOpenMode">
+								<span class="checkmark"></span>Notifikationer om rekommenderade resor.
+							</label>
+						</div>
+
+						<div class="form-row">
+							<label for="input-notcom" class="checkmark-container">
+								<input id="input-notcom" type="checkbox"  name="confirmOpenMode">
+								<span class="checkmark"></span>Notifikationer om kommande resor.
+							</label>
+						</div>
+
+						<div class="form-row">
+							<label for="input-savemethod" class="checkmark-container">
+								<input id="input-savemethod" type="checkbox"  name="confirmOpenMode">
+								<span class="checkmark"></span>Spara mina betalmetoder.
+							</label>
+						</div>
+
+						<div class="form-row">
+							<p id="other-settings-confirmation">Vi har uppdaterat dina inställningar</p>
+						</div>
+
+						<div class="form-row">
+							<button type="submit" class="input-button">
+								Spara
+							</button>
+						</div>
+
+					</form>
+				</div>
+
+			</article>
+
+		</div>
+
+		<footer id="footer">
+
+			<div class="header-container">
+				<div id="footer-logo">
+					<h2><a href="home.html">TuffeTuffeTåg</a></h2>
+					<div class="mark"></div>
+				</div>
+			</div>
+
+			<div class="footer-content max-content center-content">
+
+				<section id="footer-navigation">
+					<h2>Navigation</h2>
+					<div class="mark"></div>
+
+					<ul>
+						<li><a href="home.html">Hem</a></li>
+						<li><a href="resor.html">Resor</a></li>
+						<li><a href="konto.html">Konto</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+
+				</section>
+
+				<section id="footer-social">
+					<h2>Följ oss på sociala medier</h2>
+					<div class="mark"></div>
+					
+					<ul>
+						
+						<li>
+							<img src="facebook.svg" alt="Facebook icon" class="social-icon">
+							<a href="">Facebook</a>
+						</li>
+
+						<li>
+							<img src="twitter.svg" alt="Twitter icon" class="social-icon">
+							<a href="">Twitter</a>
+						</li>
+
+					</ul>
+
+				</section>
+
+				<section id="footer-subscribe">
+					<h2>Premuerera på vårt brev</h2>
+					<div class="mark"></div>
+
+					<form id="subscribe-form" method="POST">
+						
+						<input id="subscribe-form-email" class="input-icon email-icon" type="email" name="mail">
+
+						<p id="subscribe-result">Tack för din premuration!</p>
+
+						<button type="submit">Prenumerera</button>
+
+					</form>
+
+				</section>
+
+			</div>
+			
+		</footer>
+
+	</body>
+</html>

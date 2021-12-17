@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>TuffeTuffeTåg - Hem</title>
+		<meta charset="utf-8">
+		<meta name="application-name" content="TuffeTuffeTåg">
+		<meta name="author" content="Robert Englund">
+		<meta name="description" content="TuffeTuffeTåg hemsida, boka tågbiljetter och se vilka bokningar du har">
+		<meta name="generator" content="Egen gjord">
+		<meta name="keyword" content="start,hem">
+		<meta name="robots" content="all">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="nav.css">
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<link rel="stylesheet" type="text/css" href="footer.css">
+
+		<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script defer src="nav.js"></script>
+		<script defer src="reviews.js"></script>
+		<script defer src="subscribe.js"></script>
+		<script defer src="validate.js"></script>
+
+	</head>
+	<body>
+
+		<nav>
+			<div class="max-content center-content" id="nav-flex-container">
+				<div id="nav-header">
+					<div id="nav-logo">
+						<a href="home.html">TuffeTuffeTåg</a>
+					</div>
+					<div id="hamburger-menu">
+						<img src="hamburger-menu.svg" alt="hamburger menu">
+					</div>
+				</div>
+				<ul id="nav-content">
+					<li><a class='nav-item itemhide' href='resor.html'>Resor</a></li>
+					<li><a class='nav-item itemhide' href='konto.html'>Konto</a></li>
+					<li><a class='nav-item itemhide' href='kontakt.html'>Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="hero-image">
+			
+			<div id="inner-hero-container">
+
+
+				<article>
+					<form method="GET" action="resor.html">
+
+						<div class="form-row">
+							<header>
+								<h1>Vart ska du åka?</h1>
+								<div class="mark"></div>
+							</header>
+						</div>
+
+						<div class="input-container">
+
+							<div class="form-row input-item input-first-item">
+								<label for="input-from" class="input-label">Från</label>
+								<input id="input-from" class="input-field input-icon map-icon" type="text" name="from" required placeholder="Från...">	
+							</div>
+
+							<div class="form-row input-item input-second-item">
+								<label for="input-dest" class="input-label">Till</label>
+								<input id="input-dest" class="input-field input-icon map-icon" type="text" name="to" required placeholder="Till...">
+							</div>
+
+						</div>
+
+						<div class="input-container">
+							
+							<div class="form-row input-item">
+								<label for="input-date" class="input-label">När</label>
+								<input id="input-date" class="input-field" type="date" name="date" required>
+							</div>
+
+							<div class="form-row input-item">
+								<label for="input-time" class="input-label">Avgång</label>
+								<select class="input-field" name="time" id="input-time">
+									<option value="10:00">10:00</option>
+									<option value="12:30">12:30</option>
+									<option value="15:40">15:40</option>
+									<option value="18:15">18:15</option>
+								</select>
+							</div>
+
+						</div>
+
+										
+
+						<div class="form-row" >
+							<button type="submit" class="input-button">Hitta resa</button>
+						</div>
+
+					</form>
+				</article>
+
+				
+			</div>
+
+		</div>
+			
+		<article id="benefit-container" class="cut-background-top">
+			
+			<div class="header-container">
+				<header class="max-content center-content">
+					<h2>Förmåner att åka med oss</h2>
+					<div class="mark"></div>
+					<p>Ta reda på vilka förmåner vi har som våra kunder älskar. Vi är säkra på att du också kommer gilla något av dessa saker vi erbjuder.</p>
+				</header>
+			</div>
+
+			<div class="section-container max-content center-content">
+
+				<section>
+					
+					<div class="image-container brand-background-color">
+						<img src="wifi.svg" alt="Förmåner">
+					</div>				
+
+					<div class="text-container">
+						<header>
+							<h2>Gratis WiFi</h2>
+						</header>
+
+						<p>Ombord på alla våra tåg erbjuder vi alla våra kunder gratis wifi. Tågen är utrustade med den senaste tekniken så du kan strema film, lyssna på musik eller vad du nu vill göra medan du åker. Åtkomsten till detta prisvinnande wifi är gratis och tillgängligt för alla våra kunder.</p>
+					</div>
+					
+				</section>
+
+				<section>
+					
+					<div class="image-container brand-background-color">
+						<img src="event.svg" alt="Förmåner">
+					</div>
+
+					<div class="text-container" >
+						<header>
+							<h2>Boka om</h2>
+						</header>
+
+						<p>När du bokar en resa behöver du inte vara rädd för ifall hinder upstår. Vi ger dig rätt att boka om din resa hela 12 timmar innan avgång. Du kan boka om till nästa tillgängliga tåg eller avboka om ingen kommande tid passar. Alla pengarna tillbaka.</p>
+					</div>
+
+				</section>
+
+				<section>
+					
+					<div class="image-container brand-background-color">
+						<img src="cafe.svg" alt="Förmåner">
+					</div>
+
+					<div class="text-container" >
+						<header>
+							<h2>Vi bjuder på fika</h2>
+						</header>
+
+						<p>Alla våra tåg har en bistrovagn med sig. Våra prisvinnande kaffen har allt du och din medpassagerare kan tänka sig. Med varje tågbiljett får du även en kupong att få vissa artiklar gratis när du fikar för första gången. Du betalar med din biljetts QR kod.</p>
+					</div>
+
+				</section>
+
+			</div>
+
+		</article>
+		
+		<article id="review-container" class="cut-background-bottom">
+			
+			<div class="header-container max-content center-content">
+				<header>
+					<h2>Vad våra kunder tycker</h2>
+					<div class="mark"></div>
+					<p>Lyssna inte bara på oss! Vi har många resenärer som kan stärka våra argument. Läs recensioner som våra kunder har skrivit om oss och våra fantastiska resor.</p>
+				</header>
+			</div>
+			
+
+			<article class="review-area max-content center-content">
+
+				<div id="review-back-container" class="review-controller">
+					<img src="arrow-back.svg" alt="Föregående recension">
+				</div>
+
+				<div id="inner-review-container">
+
+					<div class="image-container">
+						<img src="portrait-placeholder.jpg" alt="Porträtt" id="review-image">
+					</div>
+					
+					<div class="review-area">
+						<div class="quote-container">
+							<blockquote id="review-quote">Laddar citat...</blockquote>
+						</div>
+							
+
+						<div class="author-container">
+							<footer>
+								<span id="review-author">Laddar författare...</span>
+							</footer>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="review-next-container" class="review-controller">
+					<img src="arrow-next.svg" alt="Nästa recension">
+				</div>
+					
+			</article>
+
+
+		</article>
+
+		<footer id="footer">
+
+			<div class="header-container">
+				<div id="footer-logo">
+					<h2><a href="home.html">TuffeTuffeTåg</a></h2>
+					<div class="mark"></div>
+				</div>
+			</div>
+
+			<div class="footer-content max-content center-content">
+
+				<section id="footer-navigation">
+					<h2>Navigation</h2>
+					<div class="mark"></div>
+
+					<ul>
+						<li><a href="home.html">Hem</a></li>
+						<li><a href="resor.html">Resor</a></li>
+						<li><a href="konto.html">Konto</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+
+				</section>
+
+				<section id="footer-social">
+					<h2>Följ oss på sociala medier</h2>
+					<div class="mark"></div>
+					
+					<ul>
+						
+						<li>
+							<img src="facebook.svg" alt="Facebook icon" class="social-icon">
+							<a href="">Facebook</a>
+						</li>
+
+						<li>
+							<img src="twitter.svg" alt="Twitter icon" class="social-icon">
+							<a href="">Twitter</a>
+						</li>
+
+					</ul>
+
+				</section>
+
+				<section id="footer-subscribe">
+					<h2>Premuerera på vårt brev</h2>
+					<div class="mark"></div>
+
+					<form id="subscribe-form" method="POST">
+						
+						<input id="subscribe-form-email" class="input-icon email-icon" type="email" name="mail">
+
+						<p id="subscribe-result">Tack för din premuration!</p>
+
+						<button type="submit">Prenumerera</button>
+
+					</form>
+
+				</section>
+
+			</div>
+			
+		</footer>
+
+	</body>
+</html>
